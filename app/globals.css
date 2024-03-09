@@ -23,7 +23,7 @@ p.content {
 }
 
 .primary-btn {
-  @apply px-4 py-2 bg-yellow-500 bg-gradient-to-r from-yellow-600 to-white text-transparent bg-clip-text rounded-md;
+  @apply px-4 py-2 bg-black text-yellow-500 rounded-md;
 }
 
 input,

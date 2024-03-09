@@ -250,20 +250,7 @@ export default function EditPostForm({ post }: { post: TPost }) {
           </button>
         )}
 
-        <select
-          onChange={(e) => setSelectedCategory(e.target.value)}
-          className="p-3 rounded-md border appearance-none"
-          value={selectedCategory}
-        >
-          <option value="">Select A Category</option>
-          {categories &&
-            categories.map((category) => (
-              <option key={category.id} value={category.catName}>
-                {category.catName}
-              </option>
-            ))}
-        </select>
-
+       
         <button className="primary-btn" type="submit">
           Update Post
         </button>
