@@ -34,7 +34,7 @@ export default async function Dashboard() {
       <h1>My Posts</h1>
 
       {posts && posts.length > 0 ? (
-        posts.slice(11,20).map((post: TPost) => (
+        posts.slice(11,100).map((post: TPost) => (
           <Post
             key={post.id}
             id={post.id}
