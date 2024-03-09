@@ -1,6 +1,6 @@
 import Post from "@/components/Post";
 import { TPost } from "./types";
-import PaginationButtons from "@/PaginationButtons";
+import AnotherPaginationButtons from "@/AnotherPaginationButtons";
 
 const getPosts = async (): Promise<TPost[] | null> => {
   try {
@@ -24,7 +24,7 @@ export default async function Home() {
   return (
     <>
       {posts && posts.length > 0 ? (
-        posts.slice(0,5).map((post: TPost) => (
+        posts.slice(6,10).map((post: TPost) => (
           <Post
             key={post.id}
             id={post.id}
@@ -41,7 +41,7 @@ export default async function Home() {
       ) : (
         <div className="py-6">No posts to display</div>
       )}
-      <PaginationButtons/>
+      <AnotherPaginationButtons/>
     </>
   );
 }
